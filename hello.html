@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello World!</h1>
+{% endif %}
+
+<h2>New Messages:</h2>
+
+
+{% for post in posts %}
+<div><p>{{post.author.nickname}} says: <b>{{post.body}}</b></p></div>
+{% endfor %}
